@@ -1,29 +1,22 @@
 'use strict';
 
 let title = prompt('Название вашего проекта');
-//console.log(title);
 
 let screens = prompt('Какие типы экранов нужно разработать?');
-//console.log(screens);
 
 let screenPrice = parseFloat(prompt('Сколько будет стоить данная работа?', '1000 руб.'));
-//console.log(screenPrice, typeof screenPrice);
 
 let adaptive = confirm('Нужен ли адаптив на сайте?');
-//console.log(adaptive);
 
 let service1 = prompt('Какой дополнительный тип услуги нужен?');
 
 let servicePrice1 = parseFloat(prompt('Сколько это будет стоить?', '1000 руб.'));
-//console.log(servicePrice1, typeof servicePrice1);
 
 let service2 = prompt('Какой дополнительный тип услуги нужен?');
 
 let servicePrice2 = parseFloat(prompt('Сколько это будет стоить?', '1000 руб.'));
-//console.log(servicePrice2, typeof servicePrice2);
 
 let fullPrice = screenPrice + servicePrice1 + servicePrice2;
-//console.log(fullPrice, typeof fullPrice);
 
 let rollback = 20;
 let servicePercentPrice = Math.ceil(fullPrice - rollback);
